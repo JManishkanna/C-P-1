@@ -1,0 +1,239 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 30px;
+    background-color: #000;
+
+}
+.logo-text{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    
+    width: 50px;
+    height: 50px;
+}
+.logo-text h2{
+    display: flex;
+
+    font-size: 16px;
+    color: #fbfbfb;
+}
+
+
+.head-menus ul{
+    list-style-type: none;
+    /* padding: 10px; */
+}
+
+.head-menus ul a{
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: none;
+    font-size: 15px;
+    padding: 10px;
+    
+    /* margin: 10px; */
+}
+
+.main-menus{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+
+}
+
+.head-menus .contact-us{
+    background-color: #f24fce;
+    color: #000;
+    border-radius:3px;
+}
+
+.head-menus .contact-us:hover{
+    background-color: #f903a7;
+    transition: all 0.8s ease-in-out;
+}
+.Sub-menus1{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: none;
+    z-index: 2;
+
+}
+
+.Sub-menus{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: none;
+    z-index: 2;
+
+}
+
+
+.Sub-menus1 li{
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px 34px;
+    width: 100%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: -5px 0;
+    border: 0;
+
+}
+.Sub-menus li{
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px 34px;
+    width: 100%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: -5px 0;
+    border: 0;
+
+}
+
+.head-menus .logo .show-menu{
+    list-style-position: hidden;
+}
+
+.head-menus .main-menus .show-menu1{
+    list-style-position: hidden;
+}
+
+.head-menus .logo .show-menu:hover .Sub-menus{
+    display: block;
+    padding: auto;
+}
+.head-menus .main-menus .show-menu1:hover .Sub-menus{
+    display: block;
+    padding: auto;
+}
+.home{
+
+    background-image: url(Assets/image.png);
+    BACKGROUND-REPEAT: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.home .home-layout {
+
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, #a54997 0%, #022e93 100%);
+    opacity: 0.6;
+    background-color: #a54997;
+    opacity: 0.6;
+    min-height: 776px;
+    position:relative ;
+    z-index: -1;
+}
+
+.home .home-content1{
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    padding: 100px 0px 0px 0px;
+    margin: 0px 100px 20px 100px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+
+} 
+
+.home .home-content{
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    margin: 0px 300px 20px 300px;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+
+} 
+
+.home .home-content2{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font: unset;
+    justify-content: space-around;
+    margin: 0px 300px 100px 300px;
+    padding: 10px 10px 10px 10px;
+}
+
+.get-started{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #e80606;
+    color: #ffffff;
+    border-radius:3px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+}
+.get-started:hover{
+    background-color: #a00a0a;
+    color: #000; ;
+}
+
+.more-info{
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #fdfdfd;
+    color: #040404;
+    border-radius:3px;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+}
+.more-info:hover{
+    background-color: #b4b2b2;
+    color: #000; 
+    transition: smooth;
+}
+.lolo{
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    display: none;
+}
+
+.subber{
+    color: #ffffff;
+    background-color: #000;
+    padding: 10px 34px;
+    width: 100%;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    margin: -5px 0;
+    border: 0;
+}
+.logo:hover + .lolo {
+
+    display: block;
+    background-color: #a00a0a;
+    
+
+}

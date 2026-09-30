@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Demo</title>
+    <link rel="shortcut icon" href="Assets/ets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="rail.css">
+</head>
+<body>
+
+    <header>
+        <img src="Assets/railAssets/secondry-logo.png" >
+        <div class="head-menus">
+            
+                
+            
+            <div id="datetime"> </div>
+            <ul class="main-menus">
+
+                <a href="#"><li>HOME</li></a>
+                <a href="#" class="train"><li class="show-menu">LOGIN/REGISTER</li></a>
+                
+                <a href="#"><li class="show-menu1" >TRAIN 
+                    <ul class="Sub-menus">
+                        <a href="#"><li>Book Ticket</li></a>
+                        <a href="#"><li>Foreign Tourist Booking</li></a>
+                        <a href="#"><li>Connecting Journey Booking</li></a>
+                        <a href="#"><li>IRCTC TRAINS</li></a>
+                        <a href="#"><li>Cancel E-Ticket</li></a>
+                        <a href="#"><li>PNR Enquiry</li></a>
+                        <a href="#"><li>Train Schedule</li></a>
+                        <a href="#"><li>Track Your Train</li></a>
+                        <a href="#"><li>FTR Coach/Train Booking</li></a>
+                        <a href="#"><li>Luggage Booking</li></a>
+                        <a href="#"><li>Dogs/Cats Booking</li></a>
+                        <a href="#"><li>Link Your Aadhaar</li></a>
+                        <a href="#"><li>Counter Ticket Cancellation</li></a>
+                        <a href="#"><li>Counter Ticket Boarding Point Change</li></a>
+
+                    </ul>
+                </li></a>
+
+                <a href="#"><li class="show-menu1">MEAL
+                     <ul class="Sub-menus">
+                        <a href="#"><li>Book Food – E-Pantry</li></a>
+                        <a href="#"><Li>Order Food - E-Catering</Li> </a>
+                        <a href="#"><li>Cooked Food Menu</li></a>
+                        
+                    </ul>
+                </li></a>
+                <a href="#" class="train"><li class="show-menu">E-WALLET
+                    <ul class="Sub-menus">
+                        <a href="#"><Li>About IRCTC eWallet</Li></a>
+                        <a href="#"><Li>IRCTC eWallet User Guide</Li></a>
+                    </ul>
+                </li></a>
+
+                <a href="#"><li class="show-menu1">ABOUT
+                    <ul class="Sub-menus">
+                        <a href="#"><Li>About IRCTC eWallet</Li></a>
+                        <a href="#"><Li>IRCTC eWallet User Guide</Li></a>
+                    </ul>
+                </li></a>
+
+                <a href="#"><li class="show-menu1">OTHER SERVICES
+                    <ul class="Sub-menus">
+
+                    <a href="#"><li>IRCTC-iPAY</li></a>
+                    <a href="#"><li>Buses</li></a>
+                    <a href="#"><li>Flights</li></a>
+                    <a href="#"><li>Hotels</li></a>
+                    <a href="#"><li>Holidays</li></a>
+                    <a href="#"><li>e-Wheelchair</li></a>
+                    <a href="#"><li>Promotions</li></a>
+
+                    </ul>
+                </li></a>
+
+               <a href="#"><li>CONTACT us</li></a>
+            </ul>
+        </div>
+        <img src="Assets/railAssets/logo.png" >
+    </header>
+
+    <section class="form-sectiom">
+        <div class="form-card">
+        <!-- <div><img src="image.png">    -->
+            <div class="cnr">
+                <button class="pnr"><span class="icon">✓</span> PNR Status</button>
+                <button class="chart"><span class="icon">▣</span> Charts / Vacancy</button>
+            </div>
+
+        <H1 class="BOOK">BOOK TICKET</H1>
+            <form>
+                <ul class="ul1">
+                    <li><img src="Assets/railAssets/marker.png" class="marker" >
+                        <input type="text"  name="from" placeholder="FROM" required  class="imput"></li>
+                    
+
+                    <li for="password">Email address
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required class="imput"></li>
+                </ul>
+            </form>
+        </div>
+
+    </section>
+
+</body> 
+
+ <script>
+    function updateDateTime() {
+      const now = new Date();
+      const options = { 
+        weekday: 'long', year: 'numeric', month: 'long', 
+        day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' 
+      };
+      document.getElementById('datetime').textContent = now.toLocaleString('en-US', options);
+    }
+
+    // Update every second
+    setInterval(updateDateTime, 1000);
+    updateDateTime(); // initial call
+  </script>
+</html>
